@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/store HTTP/1.1
+Content-Type: application/json
+
+{
+    "Storeid": "1",
+    "Store_Area":"1175",
+    "Items_Available":"1425",
+    "Daily_Customer_Count":"1102",
+    "Store_Sales":"54678"
+}
+###
+GET http://localhost:9000/api/store HTTP/1.1
+
+###
+GET http://localhost:9000/api/store/63c7f8604113acd4dfd18bde HTTP/1.1
+
+###
+PUT http://localhost:9000/api/store/63c7f8604113acd4dfd18bde HTTP/1.1
+Content-Type: application/json
+
+{
+    "Storeid": "2",
+    "Store_Area":"1200",
+    "Items_Available":"1420",
+    "Daily_Customer_Count":"1120",
+    "Store_Sales":"54620"
+}
+###
+DELETE  http://localhost:9000/api/store/63c7f8604113acd4dfd18bdd HTTP/1.1
